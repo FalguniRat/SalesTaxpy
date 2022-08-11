@@ -63,7 +63,7 @@ class Shop:
                     "[0-9]+", inputSentence.lower().partition(f"{product['name']}")[0])[-1]
             except:
                 print(
-                    "Cannot find price or quantity for the product, problem in input string.")
+                    "Price or quantity for the product cannot be found, problem in input.")
                 return None
 
             return {
@@ -129,11 +129,11 @@ class Shop:
             print(f"Total Sales Tax : {round(totalSalesTax,2)}")
             print(f"Total : {total}")
             print("____________________________________________________")
-            print("Your final receipt, Thanks for shopping with US !!")
+            print("Your final receipt, Thanks for visiting !")
             print("\n")
         else:
             print(
-                "There has been an error , probably input strings format aren't correct!")
+                "There has been an error , probably input isn't correct!")
 
 
 def __init__():
